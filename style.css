@@ -1,0 +1,126 @@
+:root 
+{
+    --redish: hsl(7, 99%, 70%);
+    --yellowish: hsl(51, 100%, 49%);
+    --cyanish1: hsl(167, 40%, 24%);
+    --blueish: hsl(198, 62%, 26%);
+    --cyanish2: hsl(168, 34%, 41%);
+
+    --DarkBlue: hsl(212, 27%, 19%);
+    --veryDarkGrayBlue: hsl(213, 9%, 39%);
+    --darkGrayBlue: hsl(232, 10%, 55%);
+    --grayBlue: hsl(210, 4%, 67%);
+    --white: hsl(0, 0%, 100%);
+}
+
+body, html
+{
+    height: 100%;
+    margin: 0px;
+}
+
+.upperSection
+{
+    background-image: url("./resources/images/photos/image-header.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: var(--white);
+}
+
+.logo
+{
+    background-image: url("./resources/images/logo.svg");
+    background-size: cover;
+}
+
+header
+{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+header:nth-child(1)
+{
+    flex: 1;
+}
+
+header:nth-child(2)
+{
+    flex: 3;
+}
+
+nav ul
+{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+h1
+{
+    text-align: center;
+}
+
+.arrow
+{
+    text-align: center;
+}
+
+main
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+h2, h3, h4
+{
+    text-align: center;
+}
+
+.clients
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.clients img
+{
+    border-radius: 400px;
+}
+
+footer
+{
+    background-color: var(--cyanish2);
+}
+
+.footerImages
+{
+    display: flex;
+}
+
+.footerLinks
+{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.footerLinks li
+{
+    text-decoration: none;
+}
+
+.social
+{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+.social li
+{
+    margin: 14px;
+}
