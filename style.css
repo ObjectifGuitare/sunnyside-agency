@@ -122,8 +122,8 @@ main > div
     height: 285px;
     text-align: left;
     padding-left: 165px;
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
 }
 
 h2
@@ -275,14 +275,19 @@ footer
 {
     main
     {
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0px;
         margin: auto;
     }
 
-    main:nth-child(n)
+    .one
     {
-        display: flex;
-        flex-direction: column-reverse;
+        grid-row: 2;
+    }
+
+    .two
+    {
+        grid-row: 1;
     }
 }
