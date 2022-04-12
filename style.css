@@ -290,4 +290,9 @@ footer
     {
         grid-row: 1;
     }
+
+    .clients
+    {
+        flex-wrap: wrap;
+    }
 }
