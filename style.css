@@ -15,19 +15,24 @@
 
 body, html
 {
-    height: 100%;
-    margin: 0px;
+    /* height: 100%;
+    margin: 0px; */
+    font-size: 18px;
 }
 
 img
 {
     margin: 0px;
+    padding: 0px;
 }
 
 .upperSection
 {
+    width: 100%;
+    height: 800px;
+
     background-image: url("./resources/images/photos/image-header.jpg");
-    height: 100%;
+    background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
     color: var(--white);
@@ -37,8 +42,13 @@ img
 {
     background-image: url("./resources/images/logo.svg");
     background-repeat: no-repeat;
-    padding: 100px;
+    width: 170px;
+    height: 33px;
+    padding-top: 46px;
+    padding-left: 40px;
+    background-position: center;
 }
+
 
 header
 {
@@ -47,11 +57,30 @@ header
     
 }
 
+
 nav ul
 {
     list-style-type: none;
     display: flex;
     justify-content: space-between;
+    /* padding-left: 47px; */
+}
+
+nav ul li
+{
+    padding-left: 47px;
+    padding-top: 16px;
+}
+
+.contact
+{
+    width: 140px;
+    height: 56px;
+    font-weight: 900;
+    background-color: var(--white);
+    border-radius: 28px;
+    color: var(--DarkBlue);
+    text-transform: capitalize;
 }
 
 h1
@@ -63,13 +92,36 @@ h1
 
 .arrow
 {
-    text-align: center;
+    display: block;
+    margin: auto;
 }
 
 main
 {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0;
+    align-items: center;
+}
+
+/* main > div
+{
+    width: 445px;
+    height: 285px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} */
+
+.nice
+{
+    width: 445px;
+    height: 285px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 h2
@@ -92,6 +144,16 @@ h3
 .clients img
 {
     border-radius: 400px;
+    width: 72px;
+    height: 72px;
+}
+
+figure
+{
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
 }
 
 footer
@@ -101,8 +163,21 @@ footer
 
 .footerImages
 {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 0;
 }
+
+.footerImages img
+{
+    width: 100%;
+    height: 100%;
+}
+
+/* .galery picture img {
+    width: 100%;
+    height: 100%
+} */
 
 .footerLinks
 {
